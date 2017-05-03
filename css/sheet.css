@@ -1,0 +1,201 @@
+#wrapper{
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+}
+html{
+box-sizing:border-box;
+}
+*,*:before, *:after{
+box-sizing:inherit;
+}
+
+
+body {
+	background-image: url("arrows.png"); 
+	background-size:cover;
+	color:brown;
+	font-family: Papyrus, fantasy;
+	margin:0;	
+}
+
+header{
+	
+	background:#D05050;
+	height:143px;
+	margin:0;
+
+	
+}
+.schools{
+	display:inline-block;
+	background:#ffd6c6;
+	width:689px;
+	float
+	margin:0;
+	border:dashed 1px;
+	padding-bottom: 30px;
+	height:455px;
+	}
+.schools h2{
+	font-size: 40px
+	}
+
+.schools p{
+	
+	
+	display:block;
+	margin: 0 auto;
+}
+
+.content{
+	width:600px;
+	margin: 0 auto;
+	
+
+}
+
+.content1{
+	width:400px;
+margin-left: 20px;
+	display:inline-block;
+	
+
+}
+.content2{
+	width:500px;
+
+	display:inline-block;
+	float:top;
+	bottom:50px;
+	vertical-align:top;
+	
+
+}
+
+.coursework{
+	display:inline-block;
+	background:#ffd6c6;
+	width:960px;
+	float
+	margin:0;
+	border:dashed 1px;
+	}
+
+	.projects{
+	display:inline-block;
+	background:#ffd6c6;
+	width:689px;
+	float
+	margin:0;
+	border:dashed 1px;
+	padding-bottom: 30px;
+	height:2800px;
+	}
+#c{
+	font-size: 40px;
+	margin-left: 38px;
+
+	}
+#maze{
+	width: 500px;
+	height:300px;
+}
+#textedit{
+	width:500px;
+	height:300px;
+}
+#othellomenu{
+	width:250px;
+	height:300px;
+}
+#othello{
+	width:300px;
+	height:300px;
+}
+#spendtrack{
+	width:290px;
+	height:220px;
+}
+#overspendtrack{
+	width:290x;
+	height:220px;
+}
+#catmario{
+	width:450px;
+	height:300px;
+}
+.projects a{
+	color: red;
+}
+#gradecalc{
+	width:295px;
+	height:150px;
+}
+#gradecalcgroup{
+	width:295px;
+	height:150px;
+}
+header h1{
+	position:relative;
+	left:50px;
+	color:white;
+	font-size: 90px;
+	display: inline-block;
+	font-family: Papyrus, fantasy;
+	margin:0 auto;
+}
+/*header h2{
+	padding-top: 20px;
+	font-size:40px;
+	margin: 0 auto;
+}*/
+
+.buttonlist{
+	
+	background:#ffc9b3;
+	display:inline-block;
+	float:right;
+	height:455px;
+	width: 271px;
+	border:dashed 1px;
+	padding: 10px;
+	
+
+
+}
+
+.buttonlist a {
+	height:50px;
+	width:220px;
+	color:#800000;
+	
+	border-radius:10px;
+	 margin: 0, auto;
+    text-align: center;
+    font-size:20px;
+  
+    text-decoration: none;
+    display:block;
+}
+.buttonlist a:hover{
+	
+	
+	color:white;
+	text-decoration: underline wavy;
+}
+
+
+a{
+	color: white;
+	padding:5px;
+	display:inline;
+	
+	margin:10px;
+	font-size:15px;
+}
+
+a:hover{
+	color:black;
+	text-decoration:none;
+}
