@@ -1,0 +1,127 @@
+body{
+	background-color:#ccffff;
+	color: black;
+	 font-family:Papyrus, fantasy;
+}
+
+h1{
+	text-align:center;
+	font-size:50px;
+	 font-family:Papyrus, fantasy;
+}
+h2{
+	font-size:40px;
+	text-align:center;
+}
+
+.inputs p{
+	display:inline-block;
+	padding-left: 50px;
+}
+
+.inputs{
+	text-align:center;
+	padding-left:20px;
+}
+
+.inputs input{
+	text-align:center;
+}
+
+.finalscore{
+	text-align:center;
+	padding-left:20px;
+}
+
+.finalscore p{
+	display:inline-block;
+	padding-left: 50px;
+}
+
+.finalscore input{
+	text-align:center;
+}
+
+
+
+.ideal{
+	text-align:center;
+}
+#idealgrade{
+	text-align:center;
+}
+#buttondiv{
+	padding-top:50px;
+}
+#button1{
+	
+	background-color:#81a8a5;
+	border: dotted;
+    color: black;
+    padding: 5px 40px;
+    display:block;
+    margin: auto;
+    cursor: pointer;
+    font-family:Papyrus, fantasy;
+    font-size:30px;
+    border-radius:12px;
+}
+
+
+
+
+
+
+/*Start buttons*/
+.start div{
+	height:50px;
+	width:200px;
+	border-color:black;
+	background-color:#96ccc8;
+	border-radius:12px;
+	 margin: auto;
+    text-align: center;
+    font-size:50px;
+    padding: 14px 40px 40px 14px;
+    border-style:dashed ;
+}
+.start div:hover{
+	background-color:#5f7a78;
+	color:white;
+}
+.start div:active{
+	background-color:#5f7a78;
+	box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+
+a{
+	color:black;
+	text-align: center
+}
+a:link{
+	color:black;
+
+}
+a:visted{
+	color:black;
+}
+a:link{
+	text-decoration:none;
+}
+
+
+
+/*Calculate grade*/
+
+/*input[type=text].left{
+	width:20%;
+	padding: 10px 2px;
+  
+    float:left;
+    text-align: center;
+    font-size:20px;
+   
+    }*/
+
