@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Directions </title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+	
+	<div> 
+    <a href="home.html"> <span><strong>Home</strong> </span></a> 
+	<a href="about.html"> <span><strong>About Us </strong> </span></a>
+	<div class="dropdown">
+        <a class="dropbtn">  <span><strong> People &#11163;</strong></span></a>
+        <div class ="dropdown-content">
+            <a href="david.html"> David J. Reinkensmeyer</a>
+        </div>
+	</div>
+    <div class="dropdown">
+        
+        <a class="dropbtn"> <span><strong>Research &#11163;</strong> </span></a>
+        <div class="dropdown-content">
+            <a href="research.html"> Technology for Arm Training </a>
+            <a href="research.html"> Technology for Locomotor Training </a>
+            <a href="research.html"> Computational Motor Learning </a>
+        </div>
+    </div>
+
+    <a href="videos.html"> <span><strong>Videos</strong> </span></a> 
+	<a href="publications.html"> <span><strong>Publications </strong> </span></a>
+	<a href="additresource.html"> <span><strong>Additional Resources</strong> </span></a>
+	<a href="directions.html" class="selected"> <span><strong>Directions</strong> </span></a>
+     <a href="contact.html"> <span><strong>Contact Us</strong> </span></a> 
+	<a href="login.html"> <span><strong>Log In </strong> </span></a>
+    </div>
+</header>
+
+<h1 style="font-size:45px; text-align:center">Directions</h1>
+  
+
+<div class="content" >
+    <div style="padding-bottom:20px">
+<p>
+    We are located in Engineering Gateway 3151 (building 321 on the standard,
+    printable <a href="https://communications.uci.edu/documents/pdf/UCI_16_map_campus_core.pdf">
+    campus map</a>). On this <a href="https://map.uci.edu/map/?id=463#!ct/11888,12033,12035,12034">
+    interactive map</a>, type Engineering Gateway 
+    in the search box to find us. The closest parking structure is the 
+    Anteater Parking structure, which is just to the right (east) on the map, 
+    at the corner of East Peltason and Anteater Drive. On this map mouse over
+    engineering, and the parking garage is highlighted in yellow (identified as 
+    "recommended"). If you pre-arranged a parking slot with Dr. Reinkensmeyer,
+    you can give your name to the person at the parking booth at the entrance 
+    to the garage, and you should be on a list. Prof. Reinkensmeyer's office 
+    is in Engineering Gateway 3225, phone 949-824-5218.</p>
+    <!--broken link in "on this map"-->
+
+    <div id="googleMap" style="width:100%;height:400px"></div>
+    <script>
+    function myMap() {
+    var mapProp= {
+        center:new google.maps.LatLng(33.643251, -117.840161),
+        zoom:18,
+         mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+        
+
+
+</div>
+
+ 
+
+
+
+
+</div>
+</div>
+<footer>
+<pre style="font-family:Times New Romans; color:grey">
+Biorobotics Laboratory
+Department of Mechanical and Aerospace Engineering
+University of California, Irvine
+Engineering Gateway 3151
+(949)824-8057</pre>
+
+<pre style="padding-top:20px;color:grey; font-size:10px"> 
+Site created by 
+<span style="color: #0D3D76"><a style="text-decoration: none" href="https://michellewoohoo.github.io./" >Michelle Woo</a></span>
+© ALL RIGHTS RESERVED
+</pre>
+</footer>
+
+
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8bhpHNDODLiWp5QVM7X3iKUSdPXImE5Q&callback=myMap"></script>
+</html>
