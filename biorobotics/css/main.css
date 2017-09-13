@@ -1,4 +1,8 @@
 
+body{
+	background-color:#0D3D76
+}
+
 #wrapper{
 	margin-left:auto;
 	margin-right:auto;
@@ -15,22 +19,28 @@ box-sizing:inherit;
 
 /*header style*/
 header{
+	margin-left:auto;
+	margin-right:auto;
+
+	background:#000040;
     padding-top:20px;
-	padding-bottom:40px;
+	padding-bottom:20px;
 	text-align:center;
+	box-shadow: 10px 10px 5px black;
 }
 header a{
+	
 	text-decoration: none;
-	color:grey;
+	color:white;
 	padding-left:10px;
 	padding-right:10px;
 	font-family: Candara ;
 }
 header a:hover{
-	color:#0D3D76;
+	color:white;
 }
 header .selected{
-	color:#0D3D76
+	color:yellow
 }
 
 /*dropdown*/
@@ -67,9 +77,7 @@ header .selected{
 }
 /*slideshow*/
 
-.slideshow{
-	background-color:#F8F8F8
-}
+
 .slideshow #mainimg{
 	opacity:1;
 	transition: opacity 1s;
@@ -110,24 +118,27 @@ header .selected{
 
 /*content*/
 h1{
-	margin:0px 0px 10px 0;
+	margin:20px 0px 5px 0;
 	padding-top:20px;
 	padding-bottom:30px;
 	padding-left:20px;
 	color:white;
-	background:	#0D3D76;
+	background:	#000040;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer{
 	padding-top:40px;
 	padding-bottom:20px;
-	background-color: #F8F8F8;
+	background-color: #000040;
 	text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0px 9px 19px 7px rgba(0,0,0,0.81);
+	-moz-box-shadow: 0px 9px 19px 7px rgba(0,0,0,0.81);
+	box-shadow: 0px 9px 19px 7px rgba(0,0,0,0.81);
 }
 
 .content{
+	background-color:white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding:30px 30px 30px 30px;
 	color:#404040;
@@ -138,5 +149,12 @@ footer{
 
 /*publications*/
 .content li{
-	margin:10px 0px;
+	margin:10px 20px 0px;
+}
+.pub button{
+	background-color: Transparent;
+	color:blue;
+	border: none;
+	background: none;
+
 }
