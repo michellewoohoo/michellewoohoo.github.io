@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Log In | Biorobotics Laboratory - University of California, Irvine</title>
+  
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+    
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ucinetid/ucinetid.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/custom/marinelli/layout.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/custom/marinelli/graphics.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/custom/marinelli/typography.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/custom/marinelli/links.css?k" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/custom/marinelli/giordani/giordani.css?k" />
+  
+  <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/marinelli/giordani/iestyles/ie6.css" />
+<![endif]-->
+
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/marinelli/giordani/iestyles/ie7.css" />
+<![endif]-->
+  
+  
+  <script type="text/javascript" src="/misc/jquery.js?k"></script>
+<script type="text/javascript" src="/misc/drupal.js?k"></script>
+<script type="text/javascript" src="/sites/all/modules/ucinetid/ucinetid.js?k"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "ucinetid_login": false });
+//--><!]]>
+</script>
+</head>
+
+
+<body>
+
+  <div id="utilities">
+    
+    <div id="plinks">     
+                  
+               </div>          </div>
+
+
+<div id="page">
+
+  <div id="header">
+	  
+ 
+  </div>
+
+ 
+         
+       
+   
+
+  <div class="wrapper"><!--wrapper:defines whole content margins-->
+  
+          	<!-- left -->
+                  <div class="lsidebar">
+
+          
+            
+ <div class="defaultblock">
+    <h2>Menu</h2><!--block title-->
+   <div class="blockcontent"><ul class="menu"><li class="leaf first"><a href="/" title="Biorobotics @ UCI">Home</a></li>
+<li class="leaf"><a href="/about" title="About Us">About Us</a></li>
+<li class="collapsed"><a href="/people" title="People">People</a></li>
+<li class="collapsed"><a href="/research" title="Research">Research</a></li>
+<li class="leaf"><a href="/videos" title="Videos">Videos</a></li>
+<li class="leaf"><a href="/publications" title="Publications">Publications</a></li>
+<li class="leaf"><a href="/addresources" title="Additional Resources">Additional Resources</a></li>
+<li class="leaf"><a href="/directions" title="Directions">Directions</a></li>
+<li class="collapsed"><a href="/contact" title="Get in contact with us">Contact Us</a></li>
+<li class="leaf last active-trail"><a href="/login" title="Log In" class="active">Log In</a></li>
+</ul></div>
+</div>            
+          </div><!-- end left -->
+        
+  
+  
+  <div id="primary" class="long">  
+               <div class="singlepage">
+	  <div class="path"><p><span>You are here</span>Log In</p></div> 
+	  
+            
+		 <h1>Log In</h1>		 
+                            <div class="drdot">
+<hr />
+</div>
+         
+          
+ 
+ 
+ 
+ 
+  <div class="node">
+ 	           
+
+        
+		        
+    <div class="content">
+	
+	
+	<p>Welcome to the Biorobotics Laboratory @ UCI Log In page.</p>
+<p>Please enter your Username and Password below:</p>
+</div>
+    
+    
+                
+        
+    
+            
+    
+  </div>
+
+ <div class="loginblock">
+    <h2 class="login">User login</h2><!--block title-->
+   <div class="blockcontent"><form action="/login?destination=node%2F26"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit-1" value="Log in"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-LqF7oeI0hHDogclAKYc3g1ywaq_XmZmDR3oiod3pEws" value="form-LqF7oeI0hHDogclAKYc3g1ywaq_XmZmDR3oiod3pEws"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+<div class="item-list"><ul class="ucinetid-list" id="ucinetid-links"><li class="ucinetid-link first last"><a href="/user/login/ucinetid?destination=node%2F26" title="Log in securely using UCI WebAuth with UCInetID">Log in using UCInetID</a></li>
+</ul></div><div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div>
+</div></form>
+<div id="ucinetid-login-wrapper" style="display: none;"><form action="https://login.uci.edu/ucinetid/webauth"  accept-charset="UTF-8" method="post" id="ucinetid-login">
+<div><input type="hidden" name="referer" id="edit-referer" value="https://login.uci.edu/ucinetid/webauth"  />
+<input type="hidden" name="return_url" id="edit-return-url" value="http://biorobotics.eng.uci.edu/user/login/ucinetid/return"  />
+<input type="hidden" name="info_text" id="edit-info-text" value=""  />
+<input type="hidden" name="info_url" id="edit-info-url" value=""  />
+<input type="hidden" name="submit_type" id="edit-submit-type" value=""  />
+<div class="form-item" id="edit-ucinetid-wrapper">
+ <label for="edit-ucinetid">Log in using UCInetID: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="128" name="ucinetid" id="edit-ucinetid" size="30" value="" class="form-text required" />
+ <div class="description">Enter your UCInetID (e.g., ptanteater)</div>
+</div>
+<div class="form-item" id="edit-password-wrapper">
+ <label for="edit-password">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="password" id="edit-password"  maxlength="128"  size="30"  class="form-text required" />
+ <div class="description">Enter your UCInetID password</div>
+</div>
+<input type="submit" name="login_button" id="edit-submit" value="Log in"  class="form-submit" />
+<span id="ucinetid-user-login-cancel"><a href="/user/login">Cancel</a></span><input type="hidden" name="form_build_id" id="form-dtP24go8YjY2r2UbODZOaE8sjDgUL0xvuMM_9-4qz0Q" value="form-dtP24go8YjY2r2UbODZOaE8sjDgUL0xvuMM_9-4qz0Q"  />
+<input type="hidden" name="form_id" id="edit-ucinetid-login" value="ucinetid_login"  />
+
+</div></form>
+</div></div>
+</div>      </div>
+    </div>
+
+   
+   
+   	<!-- right -->
+        
+
+
+ <div class="clear"></div>
+
+  </div>
+
+</div>
+<!-- Close Page -->
+
+<div id="footer">
+Biorobotics Laboratory<br>
+Department of Mechanical and Aerospace Engineering<br>
+University of California, Irvine<br>
+Engineering Gateway 3151<br>
+(949)824-8057<br></div>
+</body>
+</html>

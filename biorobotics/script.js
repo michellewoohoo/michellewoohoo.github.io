@@ -2,7 +2,8 @@
 
 //slideshow
 
-var imageArray=["images/wat.jpg", "images/troy.jpg", "images/pepe.jpg"];
+var imageArray=["slideshow/building.jpg", "slideshow/lab.jpg", 
+"slideshow/gateway.jpg","slideshow/people.jpg", "slideshow/building2.jpg","slideshow/inside.jpg"];
 var imageIndex=0;
 
 function prevSlides(){
@@ -32,12 +33,3 @@ function changeImage(){
 
 changeImage();
 
-function show(id){
-    var x=document.getElementById(id+'b');
-    if(x.style.display==='none'){
-        x.style.display='block';
-    }else{
-        x.style.display='none';
-    }
-  
-}

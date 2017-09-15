@@ -70,7 +70,8 @@ header .selected{
 	font-size:15px
 }
 .dropdown-content a:hover{
-	background-color:#F0F0F0
+	background-color:#778899;
+	
 }
 
 .dropdown:hover .dropdown-content {
