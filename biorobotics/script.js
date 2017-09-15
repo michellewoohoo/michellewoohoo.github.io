@@ -3,7 +3,7 @@
 //slideshow
 
 var imageArray=["slideshow/building.jpg", "slideshow/lab.jpg", 
-"slideshow/gateway.jpg","slideshow/people.jpg", "slideshow/building2.jpg","slideshow/inside.jpg"];
+"slideshow/gateway.jpg", "slideshow/building2.jpg","slideshow/inside.jpg"];
 var imageIndex=0;
 
 function prevSlides(){
