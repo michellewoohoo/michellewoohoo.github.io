@@ -10,6 +10,10 @@ box-sizing:border-box;
 box-sizing:inherit;
 }
 
+@font-face{
+	font-family:Pacifico;
+	src:url(Pacifico-Regular.ttf)
+}
 .about{
 	background-color:#E8E8E8;
 	margin:0;
@@ -130,7 +134,8 @@ header #cursive{
 	bottom:45px;
 	left:30px;
 	position:relative;
-	font:  45px 'Pacifico', Helvetica, sans-serif;
+	font-family: Pacifico;
+	font-size:40px;
 	color: #4e89a4;
 	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 }
