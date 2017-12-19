@@ -1,115 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Education and Experience </title>
+    <head>
+    <meta charset="UTF-8">
+    <title>Education and Skills</title>
+    <link rel="stylesheet" href="css/general.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/2.1.0/animate.min.css">
+    </head>
+    <body>
+        <a href="home.html"><img id="home" src="images/home.png"></a>
 
-	<link rel="stylesheet" href="css/style.css" type="text/css"> 
+    <div class="wrapper">
+            <header class="pull-left animated fadeInLeft" id="tabsbar">
+                    <div id="tabs">
+                            <div><a href="aboutme.html"><img id="aboutme" src="images/aboutmeIcon.png" onmouseover="this.src='images/aboutmeIconwhite.png'" onmouseout="this.src='images/aboutmeIcon.png'"></a></div>
+                            <div><a href="projects.html"><img id="projects" src="images/projectsIcon.png" onmouseover="this.src='images/projectsIconwhite.png'" onmouseout="this.src='images/projectsIcon.png'"></a></div>
+                            <div> <a href="experience.html"><img id="experience" src="images/experienceIcon.png" onmouseover="this.src='images/experienceIconwhite.png'" onmouseout="this.src='images/experienceIcon.png'"></a></div>
+                              <div><a href="education.html"><img id="education" src="images/educationIcon.png" onmouseover="this.src='images/educationIconwhite.png'" onmouseout="this.src='images/educationIcon.png'"></a></div>
+                            <div> <a href="artwork.html"><img id "art" src="images/artIcon.png" onmouseover="this.src='images/artIconwhite.png'" onmouseout="this.src='images/artIcon.png'"></a></div>
+                            <div><a href="csresume.pdf"><img id="resume" src="images/resumeIcon.png" onmouseover="this.src='images/resumeIconwhite.png'" onmouseout="this.src='images/resumeIcon.png'"></a></div>
+                            </div>
 
-	</head>
+            </header> 
 
-	<body>
-		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+            <header class="pull-right animated fadeInRight" style="border-bottom:1px solid grey;">Education and Skills</header>
+            <div id="grid2">
+                <div id="schoolsection" class="container pull-right animated fadeInRight">
+                <h1 id="schools" style=" font-size: 3.5vw ">
+                   School:
+                </h1>
+                <h2 style="font-size:2.5vw ; color:grey ">University of California, Irvine</h2>
+                <p id="schooldesc" style=" font-size: 2vw ; color:grey">
+                
+                    Expected Graduation Year: 2019<br/>
+                    
+                    B.S Computer Science<br/>
+                    
+                    GPA: 3.24
+                </p>
 
-	<div id="wrapper">
-	<header>
-	
-	<div>
-	<a id="cursive">Michelle Woo</a>	
-	 <a href="index.html"> <span><strong>ABOUT ME</strong> </span></a> 
-	<a class="selected" href="education.html "> <span><strong>&#10147;EXPERIENCE/EDUCATION </strong> </span></a>
-	<a href="projects.html"> <span><strong>PROJECTS</strong> </span></a>
-	<a href="csresume.pdf"> <span><strong>RESUME</strong> </span></a></div>
 
-	
-	</header>
+                <h1 id="schools" style=" font-size: 3.5vw ">
+                    Online Coursework:
+            </h1>
+
+            <p id="schooldesc" style=" font-size: 2vw ; color:grey ">
+                    
+                    Codecademy: HTML and CSS<br/>
+                    
+                    Codecademy: Make a Website<br/>
+                    
+                    Codecademy: JavaScript<br/>
+                    
+                    Lynda: JavaScript Essential Training<br/>
+                    
+                    Lynda: CSS Essential Training 1<br/>
+                    
+                    Udemy: JavaScript: Understanding the Weird Parts (in Progress)<br/>
+                    
+                    Udemy: The Complete Node.js Developer Course (in Progress)<br/>
+                </p>
+                </div>
+
+                <div id="skills">
+
+                <h1 class=" container pull-left animated fadeInLeft" id="schools" style=" font-size: 3.5vw; margin-bottom:0; ">
+                        Skills:
+                </h1>
+              
+           
+            <div class="container pull-left animated fadeInLeft">
+                <div class="row" id="#graph">
+                    <div class="col-sm-6" id="#half-graph-1">
+                    
+                        
+                    <!-- half-graph-1 -->
+                    <div class="col-sm-6" id="#half-graph-2">
+                     
+                        <!-- skill-meter -->
+                        <div class="row graph-entry">
+                            <div class="col-xs-4 skill-name-right"><br/>
+                                <h3>HTML</h3>
+                            </div>
+                            <!-- skill-name -->
+                            <div class="col-xs-8 ">
+                                <div class=" skill-level skill-level-right-5">
+                                </div>
+                                <!-- skill-level-5 -->
+                            </div>
+                            <!-- skill-level -->
+            
+                        </div>
+                        <!-- entry -->
+                        <div class="row graph-entry">
+                                            <div class="col-xs-4 skill-name-right"><br/>
+                                <h3>CSS</h3>
+                            </div>
+                            <!-- skill-name -->
+                            <div class="col-xs-8 ">
+                                <div class="skill-level skill-level-right-4">
+                                </div>
+                                <!-- skill-level-4 -->
+                            </div>
+                            <!-- skill-level -->
+            
+                        </div>
+                        <!-- entry -->
+                        <div class="row graph-entry">
+                                            <div class="col-xs-4 skill-name-right"><br/>
+                                <h3>C++</h3>
+                            </div>
+                            <!-- skill-name -->
+                            <div class="col-xs-8 ">
+                                <div class="skill-level skill-level-right-3">
+                                </div>
+                                <!-- skill-level-3 -->
+                            </div>
+                            <!-- skill-level -->
+                        </div>
+                        <!-- entry -->
+                        <div class="row graph-entry">
+                                            <div class="col-xs-4 skill-name-right"><br/>
+                                <h3>Javascript</h3>
+                            </div>
+                            <!-- skill-name -->
+                            <div class="col-xs-8 ">
+                                <div class=" skill-level skill-level-right-2">
+                                </div>
+                                <!-- skill-level-2 -->
+                            </div>
+                            <!-- skill-level -->
+            
+                        </div>
+                        <!-- entry -->
+                        <div class="row graph-entry">
+                                            <div class="col-xs-4 skill-name-right"><br/>
+                                <h3>Unity/C#</h3>
+                            </div>
+                            <!-- skill-name -->
+                            <div class="col-xs-8 ">
+                                <div class=" skill-level skill-level-right-1">
+                                </div>
+                                <!-- skill-level-1 -->
+                            </div>
+                            <!-- skill-level -->
+            
+                        </div>
+                        <!-- entry -->
+
+                        <div class="row graph-entry">
+                            <div class="col-xs-4 skill-name-right"><br/>
+                        <h3>PlayCanvas</h3>
+                            </div>
+                            <!-- skill-name -->
+                            <div class="col-xs-8 ">
+                                <div class=" skill-level skill-level-right-6">
+                                </div>
+                                <!-- skill-level-1 -->
+                            </div>
+                            <!-- skill-level -->
+
+                        </div>
 
 
-	<main>
-        <div style="padding-bottom:20px">
-		<section class="about">
-		
-		<h3 class="edheaders" > ~Experience~ </h3>
+
+
+                        <div class="row graph-entry">
+                            <div class="col-xs-4 skill-name-right"><br/>
+                            <h3>Python</h3>
+                        </div>
+                        <!-- skill-name -->
+                        <div class="col-xs-8 ">
+                            <div class=" skill-level skill-level-right-7">
+                            </div>
+                            <!-- skill-level-1 -->
+                        </div>
+                        <!-- skill-level -->
+
+                    </div>
+
+                    <div class="row graph-entry">
+                        <div class="col-xs-4 skill-name-right"><br/>
+                        <h3>A-Frame</h3>
+                    </div>
+                    <!-- skill-name -->
+                    <div class="col-xs-8 ">
+                        <div class=" skill-level skill-level-right-8">
+                        </div>
+                        <!-- skill-level-1 -->
+                    </div>
+                    <!-- skill-level -->
+
+                </div>
+
+                <div class="row graph-entry">
+                    <div class="col-xs-4 skill-name-right"><br/>
+                    <h3>Vuforia</h3>
+                </div>
+                <!-- skill-name -->
+                <div class="col-xs-8 ">
+                    <div class=" skill-level skill-level-right-9">
+                    </div>
+                    <!-- skill-level-1 -->
+                </div>
+                <!-- skill-level -->
+
+            </div>
+
+            
+            <div class="row graph-entry">
+                <div class="col-xs-4 skill-name-right"><br/>
+                <h3>Bootstrap</h3>
+            </div>
+            <!-- skill-name -->
+            <div class="col-xs-8 ">
+                <div class=" skill-level skill-level-right-10">
+                </div>
+                <!-- skill-level-1 -->
+            </div>
+            <!-- skill-level -->
+
+            </div>
+                    </div>
+                    <!-- half-graph-2 -->
+                </div>
+            </div>
+            <!--graph-->
+            </div>
+            </div>
+            <!--container-->
+
+        
        
-            <img style="display:inline-block;padding-left:40px;width:300px;height:230px"src="images/stb.png">
-	 <div style="display:inline-block;padding-left:40px;padding-bottom:50px;color:#505050" >
-         <h3> Super Toy Box </h3>
-	<h6 style="font-size:15px; margin:0; color:#4e89a4"> <i>Software Developer Intern </i></h6>
-	<ul>
-	<li> Replaced assets and converted XML files to JSON files for applications</li>
-	<li> Styled footer and product features/details of the Aggregate Watches website</li>
-	<li> Used Unity/C#, PlayCanvas, and A-Frame to create virtual reality components</li>
-	<li> Fixed bugs and errors of the templates that were uploaded into the VRFactory website</li>
+            </div>
+            </div>
 
-	</ul>
+    
 
-	<h3> Dating Sphere </h3>
-	<h6 style="font-size:15px; margin:0; color:#4e89a4"> <i>Beta Tester Intern </i></h6>
-	<ul>
-	<li>Tested for bugs and errors in the website before launch</li>
-	<li>Submitted bug reports and proposed improvements for website</li>
-	</ul>	
-        </div>
-	</div>
-	</section>
-    <div style="height:400px;padding-bottom:10px">
-    <section style="margin:0;height:450px" class="about">
-	<h3 style="text-align:left;padding-left:40px"class="edheaders"> ~Education~ </h3>
-    <div style="padding-top:40px;color:#505050;">
-		<div class="schcontent ">
-		<h3 style="color:#4e89a4"> University of California, Irvine </h3>
-
-		<p> Location: Irvine </p>
-
-			<p> Expected Graduation Year: 2019 </p>
-
-		<p> B.S Computer Science </p>
-		<p> GPA: 3.24 </p>
-		</div>
-
-		<div class="schcontent ">
-
-		<h3 style="color:#4e89a4"> Sunny Hills High School </h3>
-		<p> Location: Fullerton </p>
-		<p> Graduation Year: 2015</p>
-		<p> GPA: 4.2 </p>
-		</div>
-		<img style="display:inline; width:500px;position:relative; left:400px;bottom:210px" src="images/uci.png">
-		<!--<img style="display:inline;width:200px; height:200px;position:relative; left:450px; bottom:230px" src="images/SH.jpg">-->
-	</div>
-    </section>
-    </div>
-	<div style="padding-top:70px">
-	<section class="about">
-	<h3 class="edheaders"> ~Skills~ </h3>
-	<div style="text-align:center;;padding-bottom:30px;padding-top:20px;padding-right:20px;color:#505050;">
-		
-		<p>Working knowledge in in HTML, CSS , JavaScript, PlayCanvas, Python, C++ , Unity/C#, and GitHub</p>
-		<p>Basic knowledge in A-Frame, Bootstrap, ARKit, and Vuforia</p>
-		<p>Computer literate in both Windows and Apple operating systems</p>
-		
-	</div>
-	<img style="display: block;
-    margin: auto;width:300px; height:200px"src="images/javascript.png">
-	</section>
-		
-
-
-</main>
-
-
-<footer style="	text-align: center;">
-
-<pre style="padding-top:20px;color:grey; font-size:10px"> 
-Site created by 
-<span style="color: #0D3D76"><a style="text-decoration: none">Michelle Woo</a></span>
-© ALL RIGHTS RESERVED
-</pre>
-</footer>
-
-</footer>
-</div>
-</body>
+    </body>
+    
 </html>
 
