@@ -34,12 +34,7 @@ h1{
     height:100%;
     display:block;
 }
-#photo:hover{
-	animation: photo 0.3s linear 1;
-}
-@keyframes photo{
-  50%  {transform: scale(1.02);}
-}
+
 #icons a{
 	padding:10px
 }
