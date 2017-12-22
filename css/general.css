@@ -210,7 +210,7 @@ h3{
     width:90%
 }
 
-#grid3 img:hover{
+.imagePop:hover{
     animation: photo 0.3s linear 1;
 }
 @keyframes photo{
