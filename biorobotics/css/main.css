@@ -87,6 +87,15 @@ header .selected{
     display: block;
 }
 /*slideshow*/
+.pageHeaders{
+	margin:20px 0px 5px 0;
+	padding-top:20px;
+	padding-bottom:30px;
+	padding-left:20px;
+	color:white;
+	background:	#000040;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 #slideshow{
 	background-image:url("biorobotics.jpg");

@@ -12,7 +12,7 @@ function appearText(ele){
 }
 
 var imageArray=["lab.jpg","biorobotics.jpg", "watch.jpg", 
-"group.JPG", "bones.png"];
+ "bones.png"];
 var imageIndex=0;
 
 function prevSlides(){
