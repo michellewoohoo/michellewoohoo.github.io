@@ -183,8 +183,12 @@ span{
 
 #contact a{
     color:white;
-    font-size : 1.5vw;
-    
+    font-size : 1.5vw;  
+}
+
+#contact p {
+    font-size: 1vw;
+    color: #ff82b5
 }
 
 @media (max-width:850px){
