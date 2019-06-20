@@ -1,0 +1,192 @@
+body{
+    font-family: "Montserrat"; 
+}
+.title{
+    padding-top:5vw;
+    padding-bottom: 5vw
+}
+h1{
+    font-weight:300;
+    margin:0;
+    font-size: 2.5vw
+}
+span{
+    color:#ff82b5
+}
+#title_section{
+    background-color:#474747;
+    width: 100%;
+    height: 80vw;
+    position: relative;
+}
+
+#title_section img{
+    width: 40%;
+    padding-bottom:3vw
+}
+
+#title_section div{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:100%;
+}
+#title_section h1{
+    color: white;
+    letter-spacing: 15px;
+    font-weight:600;
+    font-size: 6vw
+}
+
+#title_section h2{
+    color: #ffdbeb;
+    font-weight:400;
+    font-size: 2vw
+}
+
+#about_me{
+    display: grid;
+    grid-template-columns:50% 50% ;
+  
+    background-color:white;
+}
+
+#about_me img{
+    width: 100%;
+    height: auto;   
+    object-fit: fill
+
+}
+
+#description{
+   
+    padding-top:3vw;
+    padding-left:3vw;
+    padding-right:3vw;
+    padding-bottom:3vw;
+
+}
+
+#description h1, h2{
+     font-weight:300;
+}
+
+#description h2{
+    font-size: 1.5vw;
+}
+
+#description a{
+    font-size:1.5vw
+}
+
+#icons{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    display:inline-block
+}
+#icons img{
+    width:3.5vw;
+}
+
+#icons img:hover{
+    opacity: 0.5
+}
+
+#experience{
+  
+    background-color: 	#FFDFD8;
+    padding-bottom: 10vw
+}
+
+
+.work_left{
+    display: grid;
+    grid-template-columns:80% 20% ;
+    padding-left:3vw;
+    padding-right:3vw;
+}
+.work_right{
+    display: grid;
+    grid-template-columns:20% 80% ;
+    padding-left:3vw;
+    padding-right:3vw;
+}
+.work_description{
+    border-radius: 20px;
+    background-color: white;
+    padding: 2vw 2vw 2vw 2vw
+}
+.work_description h2{
+    font-size: 1.5vw;
+    color: #ff82b5;
+    margin:0;
+}
+
+.work_description span{
+    color:grey;
+    font-size: 1.5vw
+
+}
+.work_description ul{
+    padding-left:2vw;
+    font-size:1.5vw
+}
+.work{
+    padding-top: 2vw;
+    padding-bottom: 2vw
+}
+.work img{
+    width: 15vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+}
+
+#skills{
+    background-color:#F0F0F0;
+  
+ 
+}
+
+#skills h1{
+    color:black
+}
+#chartContainer{
+    background-color:#F0F0F0;
+    padding-bottom:6vw
+}
+#chartContainer img{
+    width: 40vw
+}
+
+#contact{
+
+    background-color:#474747;
+    color:white;
+    padding-bottom:5vw
+}
+
+#contact h2{
+    margin:0;
+    color:#BEBEBE;
+    padding-top:0.3vw;
+    font-size:2vw
+}
+
+#contact a{
+    color:white;
+    font-size : 1.5vw;
+    
+}
+
+@media (max-width:850px){
+   #about_me{
+        display: block;
+   }
+
+ 
+
+}
