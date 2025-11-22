@@ -1,196 +1,1042 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="style.css" type="text/css"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-    <body> 
-        <div id = "title_section">
-           
-                <div >
-                    <center>
-                        <img class = "animated fadeIn slow" src = "content/banner.png">
-                    <h1 class="animated fadeInDown slow">MICHELLE WOO</h1>
-                    <h2  class = "animated fadeInUp slow">.  GRAPHIC DESIGNER  .  SOFTWARE ENGINEER  .  COFFEE ENTHUSIAST  .</h2>
-                </center>
-                </div>
-           
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michelle Woo - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- VS Code Container -->
+    <div class="vscode-container">
+      <!-- Menu Bar -->
+      <div class="menu-bar">
+        <div class="menu-bar-left">
+          <div class="menu-item">
+            <span class="menu-title">File</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-title">Edit</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-title">View</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-title">Go</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-title">Run</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-title">Terminal</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-title">Help</span>
+          </div>
+        </div>
+        <div class="menu-bar-center">
+          <span class="menu-title">Michelle Woo - Portfolio</span>
+        </div>
+        <div class="menu-bar-right">
+          <div class="menu-icon">—</div>
+          <div class="menu-icon">□</div>
+          <div class="menu-icon">✕</div>
+        </div>
+      </div>
+
+      <!-- VS Code Body -->
+      <div class="vscode-body">
+        <!-- Activity Bar -->
+        <div class="activity-bar">
+          <div class="activity-icon active" data-view="explorer">
+            <i class="fas fa-folder"></i>
+          </div>
+          <div class="activity-icon" data-view="search">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="activity-icon" data-view="source-control">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <div class="activity-icon" data-view="extensions">
+            <i class="fas fa-puzzle-piece"></i>
+          </div>
+          <div class="activity-icon" data-view="profile">
+            <i class="fas fa-user"></i>
+          </div>
         </div>
 
-        <div data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine" id = "about_me">
-            <div id = "profile">
-                <img src= "content/profile.jpg">
+        <!-- Sidebar (File Explorer) -->
+        <div class="sidebar" id="sidebar">
+          <div class="sidebar-header">
+            <span>EXPLORER</span>
+          </div>
+          <div class="file-tree">
+            <div class="file-tree-item" data-file="about">
+              <i class="fas fa-file-alt"></i>
+              <span>about-me.ts</span>
             </div>
-            <div id = "description">
-                <div>
-                    <h1 class = "title">ABOUT ME</h1>
-                    <div>
-                        <h2>
-                                Hi there! My name is Michelle and I graduated  <span>University of California, Irvine</span> in 2019 with a <span>computer science</span> degree. I love programming and am excited to gain more knowledge in the field of computer science. I am passionate about <span>learning new things</span> and I strive to improve and expand my skill set. I hope to pursue a career in <span>web development, game development, or UI/UX design</span>. My hobbies include playing video games, spending time with people, drawing, and studying at coffee shops.
-                         </h2>
-                         <a href="resume.pdf">Download resume</a>
-                    </div>
-                    <div id="icons">
-                            <a href="https://github.com/michellewoohoo"> 
-                            <img src="content/github.png">
-                            </a>
-                            <a href="https://www.linkedin.com/in/michelle-woo-a71a41129/"> 
-                            <img  style= "padding-left: 20px" src="content/linkedin.png">
-                            </a>
-    
-                    </div>
-                </div>
+            <div class="file-tree-item" data-file="experience">
+              <i class="fas fa-file-code"></i>
+              <span>experience.json</span>
             </div>
-        </div>
-        <div id = "experience">
-            <center><h1 class = "title" data-aos="fade-left"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine" style="color:black">EXPERIENCE</h1></center>
-            <div class = "work_left work" data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">
-                <div class = "work_description">
-                    <div>
-                        <h1>Strategy Companion <span>(January 2019-June 2019)</span></h1>
-                        <h2>Part Time Front-end Engineer and Designer</h2>
-                    </div>
-                    <div>
-                            <ul>
-                                    <li>Assisted in enhancing UI to improve efficiency and usability of the application </li>
-                                    <li>Developed interactive charts and graphs using D3.js to create user friendly data visualization</li>
-                                    <li>Designed mock-ups using Adobe Photoshop for product landing page</li>
-                            </ul>
-                                    
-                    </div>
-                </div>
-                <div>
-                    <img src="content/experience/strategywork.png">
-                </div>
+            <div class="file-tree-item" data-file="skills">
+              <i class="fas fa-file-code"></i>
+              <span>skills.ts</span>
             </div>
-            <div class = "work_right work" data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">
-                    <div>
-                            <img src="content/experience/ardentlabs.png">
-                        </div>
-                    <div class = "work_description">
-                        <div>
-                            <h1>Ardent Academy <span>(October 2018-December 2018)</span></h1>
-                            <h2>Software Developer Intern</h2>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Used React and GraphQL to implement a web frontend for users to interface with </li>
-                                <li>Managed and added new features to office application that organizes the academy’s student and classroom information </li>
-                            </ul>
-                                
-                                
-                        </div>
-                    </div>
-                   
+            <div class="file-tree-item" data-file="contact">
+              <i class="fas fa-file-alt"></i>
+              <span>contact.md</span>
             </div>
-
-            <div class = "work_left work" data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">
-                <div class = "work_description">
-                    <div>
-                        <h1>Kelley Blue Book <span>(June 2018-September 2018)</span></h1>
-                        <h2>Software Engineer Intern (UI)</h2>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Designed and developed code that handled verification for MyKBB accounts and auto sign ups</li>
-                            <li>Learned and used Gigya's API to handle account creations, verifications, password resets, emails, etc. </li>
-                            <li>Lived by Agile Scrum principles and collaborated with team members using Agile techniques including test driven development, code reviews, and retrospectives. </li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <img src="content/experience/kbb.png">
-                </div>
-            </div>
-
-            <div class = "work_right work" data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">
-                    <div>
-                            <img src="content/experience/supertoybox.jpg">
-                        </div>
-                    <div class = "work_description">
-                        <div>
-                            <h1>Super Toy Box <span>(June 2017-December 2017)</span></h1>
-                            <h2>Software Developer Intern</h2>
-                            
-                        </div>
-                        <div>
-                            <ul>
-                                    <li>Replaced assets and converted XML files to JSON files for Subaru and Kia Awards display application</li>
-                                    <li>Styled footer and product features/details of the Aggregate Watches website </li>
-                                    <li>Used Unity/C#, PlayCanvas, and A-Frame to create virtual reality components</li>
-                                    <li>Fixed bugs and errors of the templates that were uploaded into the VRFactory website</li>
-                            </ul>
-                        </div>
-                    </div>
-                   
-            </div>
-
-                
-        </div>
-        <div  data-aos="fade-zoom-in"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine" id = "skills">
-                <center style = "background-color:#F0F0F0"><h1 class = "title">SKILLS</h1></center>
-                    <div id="chartContainer" >
-                        <center>
-                            <img src="content/chart.png">
-                        </center>
-                    </div>
+          </div>
         </div>
 
-        <div id = "contact">
-           
-            <div >
-                <center>
-                    <h1 class = "title">
-                         Let's Connect?
-                    </h1>
-                    <div id="icons">
-                            <a href="https://github.com/michellewoohoo"> 
-                            <img src="content/github.png">
-                            </a>
-                            <a href="https://www.linkedin.com/in/michelle-woo-a71a41129/"> 
-                            <img  style= "padding-left: 20px" src="content/linkedin.png">
-                            </a>
-    
-                    </div>
-                    
-                    <h2>626-200-7215</h2>
-                    <h2>michelleymwoo@gmail.com</h2>
-                    <a href="resume.pdf">Download resume</a>
-                    <p> All graphics created by Michelle Woo</p>
-                   
-                </center>
+        <!-- Editor Container -->
+        <div class="editor-container">
+          <!-- Tab Bar -->
+          <div class="tab-bar">
+            <div class="tab active" data-file="about">
+              <i class="fas fa-file-alt tab-icon"></i>
+              <span>about-me.ts</span>
             </div>
+            <div class="tab" data-file="experience">
+              <i class="fas fa-file-code tab-icon"></i>
+              <span>experience.json</span>
+            </div>
+            <div class="tab" data-file="skills">
+              <i class="fas fa-file-code tab-icon"></i>
+              <span>skills.ts</span>
+            </div>
+            <div class="tab" data-file="contact">
+              <i class="fas fa-file-alt tab-icon"></i>
+              <span>contact.md</span>
+            </div>
+          </div>
+
+          <!-- Editor Content -->
+          <div class="editor-content">
+            <!-- About Me File -->
+            <div class="code-file active" id="about">
+              <div class="editor-lines">
+                <div class="editor-line">
+                  <span class="line-number">1</span>
+                  <div class="line-content">
+                    <span class="comment">/*</span>
+                    <span class="comment"> * About Me</span>
+                    <span class="comment"> */</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">2</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">3</span>
+                  <div class="line-content">
+                    <span class="keyword">const</span>
+                    <span class="variable">michelle</span> = {
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">4</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">name</span>:
+                    <span class="string">"Michelle Woo"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">5</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">title</span>:
+                    <span class="string">"Software Engineer"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">6</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property"
+                      >experience</span
+                    >: <span class="number">5</span> +
+                    <span class="string">" years"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">7</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property"
+                      >specialization</span
+                    >: <span class="string">"Front End Development"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">8</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">9</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"
+                      >// Profile Image</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">10</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">profile</span
+                    >: <span class="string">"content/profile.png"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">11</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">12</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"
+                      >// About Me</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">13</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">bio</span>:
+                    <span class="string"
+                      >`Front End Developer with 5+ years of industry`</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">14</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >`experience building performance-driven,`</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">15</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >`scalable web applications.`</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">16</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">17</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property"
+                      >description</span
+                    >:
+                    <span class="string"
+                      >`With years of work experience, I've worked
+                      closely`</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">18</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >`with stakeholders, UI/UX designers, and fellow`</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">19</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >`developers. I understand the importance of`</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">20</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >`communication and teamwork.`</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">21</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">22</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">stats</span>:
+                    {
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">23</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >yearsExperience</span
+                    >: <span class="number">5</span> +
+                    <span class="string">"+"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">24</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >projectsCompleted</span
+                    >: <span class="number">50</span> +
+                    <span class="string">"+"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">25</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >dedication</span
+                    >: <span class="string">"100%"</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">26</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">27</span>
+                  <div class="line-content">};</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">28</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line profile-image-line">
+                  <span class="line-number">29</span>
+                  <div class="line-content profile-content">
+                    <img
+                      src="content/profile.png"
+                      alt="Michelle Woo"
+                      class="profile-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience File -->
+            <div class="code-file" id="experience">
+              <div class="editor-lines">
+                <div class="editor-line">
+                  <span class="line-number">1</span>
+                  <div class="line-content">
+                    <span class="comment">// Experience Timeline</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">2</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">3</span>
+                  <div class="line-content">
+                    <span class="keyword">const</span>
+                    <span class="variable">experience</span> = [
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">4</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;{</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">5</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >company</span
+                    >: <span class="string">"Strategy Companion"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">6</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >role</span
+                    >:
+                    <span class="string"
+                      >"Part Time Front-end Engineer and Designer"</span
+                    >,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">7</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >period</span
+                    >: <span class="string">"January 2019 - June 2019"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">8</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >responsibilities</span
+                    >: [
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">9</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Assisted in enhancing UI to improve efficiency"</span
+                    >,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">10</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Developed interactive charts using D3.js"</span
+                    >,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">11</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Designed mock-ups using Adobe Photoshop"</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">12</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">13</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >image</span
+                    >:
+                    <span class="string"
+                      >"content/experience/strategywork.png"</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">14</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;},</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">15</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">16</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;{</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">17</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >company</span
+                    >: <span class="string">"Ardent Academy"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">18</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >role</span
+                    >: <span class="string">"Software Developer Intern"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">19</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >period</span
+                    >:
+                    <span class="string">"October 2018 - December 2018"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">20</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >responsibilities</span
+                    >: [
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">21</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Used React and GraphQL to implement web frontend"</span
+                    >,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">22</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Managed office application features"</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">23</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">24</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >image</span
+                    >:
+                    <span class="string"
+                      >"content/experience/ardentlabs.png"</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">25</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;},</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">26</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">27</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;{</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">28</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >company</span
+                    >: <span class="string">"Kelley Blue Book"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">29</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >role</span
+                    >:
+                    <span class="string">"Software Engineer Intern (UI)"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">30</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >period</span
+                    >: <span class="string">"June 2018 - September 2018"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">31</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >responsibilities</span
+                    >: [
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">32</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Designed and developed MyKBB account verification"</span
+                    >,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">33</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Used Gigya's API for account management"</span
+                    >,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">34</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Followed Agile Scrum principles"</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">35</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">36</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >image</span
+                    >: <span class="string">"content/experience/kbb.png"</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">37</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;},</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">38</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">39</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;{</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">40</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >company</span
+                    >: <span class="string">"Super Toy Box"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">41</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >role</span
+                    >: <span class="string">"Software Developer Intern"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">42</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >period</span
+                    >: <span class="string">"June 2017 - December 2017"</span>,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">43</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >responsibilities</span
+                    >: [
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">44</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Converted XML files to JSON files"</span
+                    >,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">45</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Styled footer and product features"</span
+                    >,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">46</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="string"
+                      >"Created VR components using Unity/C#"</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">47</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">48</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                      class="property"
+                      >image</span
+                    >:
+                    <span class="string"
+                      >"content/experience/supertoybox.jpg"</span
+                    >
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">49</span>
+                  <div class="line-content">&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">50</span>
+                  <div class="line-content">];</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills File -->
+            <div class="code-file" id="skills">
+              <div class="editor-lines">
+                <div class="editor-line">
+                  <span class="line-number">1</span>
+                  <div class="line-content">
+                    <span class="comment">// Skills & Technologies</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">2</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">3</span>
+                  <div class="line-content">
+                    <span class="keyword">interface</span>
+                    <span class="variable">Skill</span> {
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">4</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">name</span>:
+                    <span class="keyword">string</span>;
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">5</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">level</span>:
+                    <span class="keyword">number</span>;
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">6</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">icon</span>:
+                    <span class="keyword">string</span>;
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">7</span>
+                  <div class="line-content">}</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">8</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">9</span>
+                  <div class="line-content">
+                    <span class="keyword">const</span>
+                    <span class="variable">skills</span>:
+                    <span class="variable">Skill</span>[] = [
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">10</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{
+                    <span class="property">name</span>:
+                    <span class="string">"JavaScript"</span>,
+                    <span class="property">level</span>:
+                    <span class="number">90</span>,
+                    <span class="property">icon</span>:
+                    <span class="string">"fab fa-js"</span> },
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">11</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{
+                    <span class="property">name</span>:
+                    <span class="string">"React"</span>,
+                    <span class="property">level</span>:
+                    <span class="number">85</span>,
+                    <span class="property">icon</span>:
+                    <span class="string">"fab fa-react"</span> },
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">12</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{
+                    <span class="property">name</span>:
+                    <span class="string">"HTML5"</span>,
+                    <span class="property">level</span>:
+                    <span class="number">80</span>,
+                    <span class="property">icon</span>:
+                    <span class="string">"fab fa-html5"</span> },
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">13</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{
+                    <span class="property">name</span>:
+                    <span class="string">"CSS3"</span>,
+                    <span class="property">level</span>:
+                    <span class="number">85</span>,
+                    <span class="property">icon</span>:
+                    <span class="string">"fab fa-css3-alt"</span> },
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">14</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{
+                    <span class="property">name</span>:
+                    <span class="string">"Node.js"</span>,
+                    <span class="property">level</span>:
+                    <span class="number">75</span>,
+                    <span class="property">icon</span>:
+                    <span class="string">"fab fa-node-js"</span> },
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">15</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{
+                    <span class="property">name</span>:
+                    <span class="string">"GraphQL"</span>,
+                    <span class="property">level</span>:
+                    <span class="number">80</span>,
+                    <span class="property">icon</span>:
+                    <span class="string">"fas fa-code"</span> },
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">16</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{
+                    <span class="property">name</span>:
+                    <span class="string">"Unity/C#"</span>,
+                    <span class="property">level</span>:
+                    <span class="number">70</span>,
+                    <span class="property">icon</span>:
+                    <span class="string">"fab fa-unity"</span> },
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">17</span>
+                  <div class="line-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;{
+                    <span class="property">name</span>:
+                    <span class="string">"UI/UX Design"</span>,
+                    <span class="property">level</span>:
+                    <span class="number">85</span>,
+                    <span class="property">icon</span>:
+                    <span class="string">"fas fa-paint-brush"</span> }
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">18</span>
+                  <div class="line-content">];</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact File -->
+            <div class="code-file" id="contact">
+              <div class="editor-lines">
+                <div class="editor-line">
+                  <span class="line-number">1</span>
+                  <div class="line-content">
+                    <span class="comment"># Contact Information</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">2</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">3</span>
+                  <div class="line-content">
+                    I'm always open to discussing new projects, creative ideas,
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">4</span>
+                  <div class="line-content">
+                    or opportunities to be part of your visions.
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">5</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">6</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">7</span>
+                  <div class="line-content">
+                    <span class="comment">## Email</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">8</span>
+                  <div class="line-content">
+                    <span class="keyword">Email:</span> michelleymwoo@gmail.com
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">9</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">10</span>
+                  <div class="line-content">
+                    <span class="comment">## Social Links</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">11</span>
+                  <div class="line-content">
+                    - <span class="string">GitHub</span>:
+                    https://github.com/michellewoohoo
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">12</span>
+                  <div class="line-content">
+                    - <span class="string">LinkedIn</span>:
+                    https://www.linkedin.com/in/michelle-woo-a71a41129/
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">13</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">14</span>
+                  <div class="line-content">
+                    <span class="comment">## Resume</span>
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">15</span>
+                  <div class="line-content">
+                    <span class="string">Download</span>:
+                    [resume.pdf](./resume.pdf)
+                  </div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">16</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">17</span>
+                  <div class="line-content">---</div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">18</span>
+                  <div class="line-content"></div>
+                </div>
+                <div class="editor-line">
+                  <span class="line-number">19</span>
+                  <div class="line-content">
+                    <span class="comment"
+                      >All graphics created by Michelle Woo</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-       
+      </div>
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div class="status-bar-left">
+          <div class="status-item">
+            <i class="fas fa-code-branch"></i>
+            <span>main</span>
+          </div>
+          <div class="status-item">
+            <i class="fas fa-circle" style="font-size: 6px; color: #4ec9b0"></i>
+            <span>TypeScript</span>
+          </div>
+          <div class="status-item">
+            <i class="fas fa-smile"></i>
+            <span>UTF-8</span>
+          </div>
+          <div class="status-item">
+            <i class="fas fa-space-shuttle"></i>
+            <span>LF</span>
+          </div>
+        </div>
+        <div class="status-bar-right">
+          <div class="status-item">
+            <span>Ln 1, Col 1</span>
+          </div>
+          <div class="status-item">
+            <span>Spaces: 4</span>
+          </div>
+          <div class="status-item">
+            <i class="fas fa-bell"></i>
+          </div>
+        </div>
+      </div>
     </div>
-      
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        
-        <script>
-                AOS.init();
-              
-        </script>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-   
-    </body>
-    
-</html>
 
+    <script src="script.js"></script>
+  </body>
+</html>
