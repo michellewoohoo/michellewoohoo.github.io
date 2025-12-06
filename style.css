@@ -148,6 +148,7 @@ body {
   cursor: pointer;
   position: relative;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
 .activity-icon:hover {
@@ -290,8 +291,7 @@ body {
 
 /* ===== Editor Lines ===== */
 .editor-lines {
-  display: flex;
-  align-items: flex-start;
+  position: relative;
   padding: 10px 0;
   background: var(--vscode-editor-bg);
   font-size: 14px;
@@ -299,16 +299,25 @@ body {
   color: var(--vscode-line-number);
 }
 
-/* Line numbers column - completely independent */
+/* Line numbers column - completely independent, absolutely positioned */
 .line-numbers-column {
+  position: absolute;
+  left: 0;
+  top: 10px;
   width: 76px;
-  flex-shrink: 0;
+  max-height: calc(100 * 22px);
   display: flex;
   flex-direction: column;
   background: var(--vscode-editor-bg);
   border-right: 1px solid var(--vscode-border);
-  position: relative;
+  z-index: 1;
+  pointer-events: none;
   overflow: hidden;
+}
+
+/* Experience section can have up to 100 lines */
+#experience .line-numbers-column {
+  max-height: calc(100 * 22px);
 }
 
 .line-number-wrapper {
@@ -333,10 +342,10 @@ body {
 
 /* Line content column - independent from line numbers */
 .line-content-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding-left: 16px;
+  padding-left: 92px;
+  padding-right: 16px;
+  position: relative;
+  z-index: 0;
 }
 
 .line-content-wrapper {
@@ -360,20 +369,6 @@ body {
   color: var(--vscode-text);
   min-height: 22px;
   height: auto;
-}
-
-/* Legacy support for non-restructured content */
-.editor-line {
-  display: block;
-  margin: 0;
-  min-height: 22px;
-  height: auto;
-  padding-left: 76px;
-  position: relative;
-}
-
-.editor-line:hover .line-content {
-  background: var(--vscode-hover);
 }
 
 .line-content > * {
@@ -673,6 +668,14 @@ body {
   object-fit: cover;
 }
 
+.comment-text {
+  color: var(--vscode-comment);
+}
+
+.function-text {
+  color: var(--vscode-function);
+}
+
 /* ===== Status Bar ===== */
 .status-bar {
   height: 24px;
@@ -791,6 +794,12 @@ body {
 
   .line-numbers-column {
     width: 50px;
+    top: 10px;
+    max-height: calc(100 * 22px);
+  }
+
+  #experience .line-numbers-column {
+    max-height: calc(100 * 22px);
   }
 
   .line-number {
@@ -799,7 +808,7 @@ body {
   }
 
   .line-content-column {
-    padding-left: 12px;
+    padding-left: 66px;
   }
 
   .editor-lines {
@@ -895,6 +904,12 @@ body {
 
   .line-numbers-column {
     width: 30px;
+    top: 10px;
+    max-height: calc(100 * 22px);
+  }
+
+  #experience .line-numbers-column {
+    max-height: calc(100 * 22px);
   }
 
   .line-number {
@@ -903,7 +918,7 @@ body {
   }
 
   .line-content-column {
-    padding-left: 10px;
+    padding-left: 46px;
   }
 
   .line-content {

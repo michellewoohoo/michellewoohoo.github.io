@@ -30,6 +30,15 @@ function switchTab(fileName) {
       item.style.background = "transparent";
     }
   });
+
+  // Update line numbers height after tab switch (with delay to ensure content is visible)
+  setTimeout(() => {
+    matchLineNumbersHeight();
+  }, 100);
+
+  setTimeout(() => {
+    matchLineNumbersHeight();
+  }, 300);
 }
 
 // Tab click handlers
@@ -46,14 +55,16 @@ fileTreeItems.forEach((item) => {
   });
 });
 
-// Activity bar functionality (optional - can show/hide sidebar)
-const activityIcons = document.querySelectorAll(".activity-icon");
+// Activity bar functionality (only for icons with data-view, not links)
+const activityIcons = document.querySelectorAll(".activity-icon[data-view]");
 const sidebar = document.getElementById("sidebar");
 
 activityIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
     // Remove active from all activity icons
-    activityIcons.forEach((i) => i.classList.remove("active"));
+    document
+      .querySelectorAll(".activity-icon")
+      .forEach((i) => i.classList.remove("active"));
     // Add active to clicked icon
     icon.classList.add("active");
 
@@ -72,6 +83,82 @@ activityIcons.forEach((icon) => {
 // Set initial active tab
 switchTab("about");
 
+// Match line numbers column height to content column height
+const resizeObservers = new Map();
+
+function matchLineNumbersHeight() {
+  const allEditorLines = document.querySelectorAll(".editor-lines");
+
+  allEditorLines.forEach((editorLinesContainer) => {
+    const lineNumbersColumn = editorLinesContainer.querySelector(
+      ".line-numbers-column"
+    );
+    const lineContentColumn = editorLinesContainer.querySelector(
+      ".line-content-column"
+    );
+
+    if (!lineNumbersColumn || !lineContentColumn) return;
+
+    // Check if parent code-file is active/visible
+    const codeFile = editorLinesContainer.closest(".code-file");
+    if (codeFile && !codeFile.classList.contains("active")) {
+      return; // Skip inactive sections
+    }
+
+    const updateHeight = () => {
+      const contentHeight = lineContentColumn.offsetHeight;
+      // Check if this is the experience section
+      const isExperienceSection =
+        editorLinesContainer.closest("#experience") !== null;
+
+      if (isExperienceSection) {
+        // Experience section: Match content height, but allow up to 100 lines (2200px) maximum
+        const maxLinesHeight = 100 * 22; // 2200px for 100 lines
+        if (contentHeight > 0) {
+          // Use the smaller of content height or max 100 lines
+          const finalHeight = Math.min(contentHeight, maxLinesHeight);
+          lineNumbersColumn.style.maxHeight = `${finalHeight}px`;
+        }
+      } else {
+        // Other sections: match content height, limited by CSS to 50 lines
+        if (contentHeight > 0) {
+          lineNumbersColumn.style.maxHeight = `${contentHeight}px`;
+        }
+      }
+    };
+
+    // Update height immediately
+    updateHeight();
+
+    // Use ResizeObserver to watch for content changes (only create once per container)
+    if (window.ResizeObserver && !resizeObservers.has(editorLinesContainer)) {
+      const resizeObserver = new ResizeObserver(() => {
+        updateHeight();
+      });
+      resizeObserver.observe(lineContentColumn);
+      resizeObservers.set(editorLinesContainer, resizeObserver);
+    }
+  });
+}
+
+// Match heights on page load
+document.addEventListener("DOMContentLoaded", () => {
+  matchLineNumbersHeight();
+});
+
+// Also match heights after delays to ensure content is fully rendered (especially important on mobile)
+setTimeout(() => {
+  matchLineNumbersHeight();
+}, 100);
+
+setTimeout(() => {
+  matchLineNumbersHeight();
+}, 500);
+
+setTimeout(() => {
+  matchLineNumbersHeight();
+}, 1000);
+
 // Smooth scrolling for editor content
 const editorContent = document.querySelector(".editor-content");
 if (editorContent) {
@@ -87,164 +174,3 @@ document.querySelectorAll("a").forEach((link) => {
     }
   });
 });
-
-// Restructure editor lines to have independent line number column
-function restructureEditorLines() {
-  const allEditorLines = document.querySelectorAll(".editor-lines");
-
-  allEditorLines.forEach((editorLinesContainer) => {
-    // Check if already restructured
-    if (editorLinesContainer.querySelector(".line-numbers-column")) {
-      fillLineNumbers(editorLinesContainer);
-      return;
-    }
-
-    const editorLines = editorLinesContainer.querySelectorAll(".editor-line");
-    if (editorLines.length === 0) return;
-
-    // Create columns
-    const lineNumbersColumn = document.createElement("div");
-    lineNumbersColumn.className = "line-numbers-column";
-
-    const lineContentColumn = document.createElement("div");
-    lineContentColumn.className = "line-content-column";
-
-    // Extract line numbers and content
-    editorLines.forEach((line) => {
-      const lineNumber = line.querySelector(".line-number");
-      const lineContent = line.querySelector(".line-content");
-
-      if (lineNumber) {
-        const numberWrapper = document.createElement("div");
-        numberWrapper.className = "line-number-wrapper";
-        numberWrapper.appendChild(lineNumber.cloneNode(true));
-        lineNumbersColumn.appendChild(numberWrapper);
-      }
-
-      if (lineContent) {
-        const contentWrapper = document.createElement("div");
-        contentWrapper.className = "line-content-wrapper";
-        contentWrapper.appendChild(lineContent.cloneNode(true));
-        lineContentColumn.appendChild(contentWrapper);
-      }
-    });
-
-    // Clear original content and add new structure
-    editorLinesContainer.innerHTML = "";
-    editorLinesContainer.appendChild(lineNumbersColumn);
-    editorLinesContainer.appendChild(lineContentColumn);
-
-    // Fill line numbers to bottom
-    fillLineNumbers(editorLinesContainer);
-  });
-}
-
-// Fill line numbers up to 50 (CSS will clip them to match content height)
-function fillLineNumbers(editorLinesContainer) {
-  const lineNumbersColumn = editorLinesContainer.querySelector(
-    ".line-numbers-column"
-  );
-  const lineContentColumn = editorLinesContainer.querySelector(
-    ".line-content-column"
-  );
-
-  if (!lineNumbersColumn || !lineContentColumn) return;
-
-  // Get the highest current line number from existing content
-  const existingLineNumbers =
-    lineNumbersColumn.querySelectorAll(".line-number");
-  let highestNumber = 0;
-  existingLineNumbers.forEach((num) => {
-    const numValue = parseInt(num.textContent.trim());
-    if (numValue > highestNumber) {
-      highestNumber = numValue;
-    }
-  });
-
-  // Count how many we already have
-  const currentCount = existingLineNumbers.length;
-  const maxLines = 50;
-
-  // Add line numbers up to 50 (or until we match content lines, whichever is less)
-  const contentLines = lineContentColumn.querySelectorAll(
-    ".line-content-wrapper"
-  ).length;
-  const linesNeeded = Math.min(maxLines, contentLines) - currentCount;
-
-  // If we have fewer than maxLines and content has more lines, add more
-  if (currentCount < maxLines) {
-    const additionalLines = Math.min(
-      maxLines - currentCount,
-      contentLines - currentCount
-    );
-
-    for (let i = 0; i < additionalLines; i++) {
-      highestNumber++;
-
-      // Add line number
-      const numberWrapper = document.createElement("div");
-      numberWrapper.className = "line-number-wrapper";
-      const lineNumber = document.createElement("span");
-      lineNumber.className = "line-number";
-      lineNumber.textContent = highestNumber;
-      numberWrapper.appendChild(lineNumber);
-      lineNumbersColumn.appendChild(numberWrapper);
-
-      // Only add empty content wrapper if content doesn't already have one
-      if (i < contentLines - currentCount) {
-        // Content already exists, no need to add
-      } else {
-        const contentWrapper = document.createElement("div");
-        contentWrapper.className = "line-content-wrapper";
-        const lineContent = document.createElement("div");
-        lineContent.className = "line-content";
-        contentWrapper.appendChild(lineContent);
-        lineContentColumn.appendChild(contentWrapper);
-      }
-    }
-  }
-
-  // Ensure we have exactly 50 line numbers
-  while (
-    lineNumbersColumn.querySelectorAll(".line-number-wrapper").length < maxLines
-  ) {
-    highestNumber++;
-    const numberWrapper = document.createElement("div");
-    numberWrapper.className = "line-number-wrapper";
-    const lineNumber = document.createElement("span");
-    lineNumber.className = "line-number";
-    lineNumber.textContent = highestNumber;
-    numberWrapper.appendChild(lineNumber);
-    lineNumbersColumn.appendChild(numberWrapper);
-  }
-
-  // Match the line numbers column height to the content column height
-  const matchHeights = () => {
-    const contentHeight = lineContentColumn.offsetHeight;
-    lineNumbersColumn.style.maxHeight = `${contentHeight}px`;
-  };
-
-  // Match heights immediately
-  matchHeights();
-
-  // Use ResizeObserver to keep heights matched
-  if (window.ResizeObserver) {
-    const resizeObserver = new ResizeObserver(() => {
-      matchHeights();
-    });
-    resizeObserver.observe(lineContentColumn);
-  } else {
-    // Fallback: match on window resize
-    window.addEventListener("resize", matchHeights);
-  }
-}
-
-// Run on page load
-document.addEventListener("DOMContentLoaded", () => {
-  restructureEditorLines();
-});
-
-// Also run after a short delay to ensure everything is loaded
-setTimeout(() => {
-  restructureEditorLines();
-}, 100);
